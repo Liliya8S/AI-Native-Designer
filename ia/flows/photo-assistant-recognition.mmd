@@ -1,0 +1,10 @@
+flowchart TD
+    Onboarding[Onboarding] --> Home[Home]
+    Home -->|Камера| Permissions[Permissions]
+    Permissions -->|доступ дан| Camera[Camera]
+    Camera -->|фото сделано, p95 менее 3с| RecognitionResult[RecognitionResult]
+    RecognitionResult -->|низкая уверенность| RetryCapture[RetryCapture]
+    RetryCapture --> Camera
+    RecognitionResult -->|Подробнее| SignDetail[SignDetail]
+    RecognitionResult -->|Повторить| ReviewQueue[ReviewQueue]
+    RecognitionResult -.->|автосохранение, без действия пользователя| History[History]
