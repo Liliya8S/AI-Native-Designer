@@ -1,0 +1,59 @@
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  flex: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.iconButton:active {
+  transform: scale(0.92);
+}
+
+.icon {
+  display: block;
+  border-radius: 2px;
+}
+
+/* Surface=dark — исходный дефолт, 44px, тач-таргет */
+.dark {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--surface-action-primary);
+}
+.dark .icon {
+  width: 20px;
+  height: 20px;
+  background: var(--text-on-action);
+}
+
+/* Surface=light — 32px, светлые экраны */
+.light {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  background: var(--surface-well);
+}
+.light .icon {
+  width: 16px;
+  height: 16px;
+  background: var(--text-default);
+}
+
+/* Surface=translucent — 40px, тёмные AR-экраны. 12%-белый оверлей — та же
+   decorative-полупрозрачность без отдельного токена, что и в Figma-мастере
+   (см. ds/components.md, готча про opacity на инстансах). */
+.translucent {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+.translucent .icon {
+  width: 18px;
+  height: 18px;
+  background: var(--text-on-action);
+}

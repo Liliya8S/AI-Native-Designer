@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-4);
+  border-radius: var(--radius-xl);
+  background: var(--surface-well);
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.iconWrap {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--surface-default);
+}
+
+.textCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.title {
+  color: var(--text-default);
+  font-family: var(--font-sans);
+  font-size: var(--size-base);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-base);
+}
+
+.subtitle {
+  color: var(--text-muted);
+}

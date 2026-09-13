@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  width: 64px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 180ms ease;
+}
+
+.item:not(.active):hover {
+  color: var(--text-default);
+}
+
+.active {
+  color: var(--surface-action-primary);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0.7;
+}

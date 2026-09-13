@@ -1,0 +1,46 @@
+:root {
+  /* Surfaces */
+  --surface-default: var(--gray-00);
+  --surface-subtle: var(--gray-50);
+  --surface-action-primary: var(--accent-500);
+  --surface-action-primary-hover: var(--accent-700);
+  --surface-inverse: var(--gray-900);
+  --surface-well: var(--gray-100);
+
+  /* Text */
+  --text-default: var(--gray-900);
+  --text-muted: var(--gray-500);
+  --text-on-action: var(--gray-00);
+  --text-error: var(--error-500);
+  --text-success: var(--success-500);
+
+  /* Borders */
+  --border-default: var(--gray-200);
+  --border-strong: var(--gray-300);
+  --border-error: var(--error-500);
+  --border-focus-ring: var(--accent-500);
+  --border-decorative: var(--accent-100);
+
+  /* States */
+  --bg-success: var(--success-500);
+  --bg-warning: var(--warning-500);
+  --bg-error: var(--error-500);
+  --bg-info: var(--info-500);
+
+  /* States — subtle подложка */
+  --bg-success-subtle: var(--success-a12);
+  --bg-warning-subtle: var(--warning-a12);
+  --bg-error-subtle: var(--error-a12);
+  --bg-info-subtle: var(--info-a12);
+
+  /* Категоризация (не статус) */
+  --bg-category-red: var(--category-red-500);
+  --bg-category-red-subtle: var(--category-red-a12);
+  --text-category-red: var(--category-red-500);
+  --bg-category-blue: var(--category-blue-500);
+  --bg-category-blue-subtle: var(--category-blue-a12);
+  --text-category-blue: var(--category-blue-500);
+
+  /* Overlay */
+  --overlay-scrim: var(--scrim-40);
+}

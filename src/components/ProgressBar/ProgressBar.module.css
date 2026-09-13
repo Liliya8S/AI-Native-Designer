@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: var(--text-muted);
+}
+
+.percent {
+  font-weight: var(--weight-medium);
+}
+
+.track {
+  height: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-well);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  transition: width 0.2s ease;
+}
+
+.accent .fill {
+  background: var(--surface-action-primary);
+}
+.accent .percent {
+  color: var(--text-default);
+}
+
+.category-blue .fill {
+  background: var(--bg-category-blue);
+}
+.category-blue .percent {
+  color: var(--text-category-blue);
+}

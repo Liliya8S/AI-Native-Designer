@@ -1,0 +1,76 @@
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  width: 140px;
+  height: 140px;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  box-sizing: border-box;
+}
+
+.indicatorWrap {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex: none;
+}
+
+.indicator {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.lockIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 17px;
+  background: var(--border-strong);
+  border-radius: 2px;
+}
+
+/* locked */
+.locked {
+  background: var(--surface-subtle);
+}
+.locked .indicator {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--border-strong);
+}
+.locked .label {
+  color: var(--text-muted);
+}
+
+/* available */
+.available {
+  background: var(--surface-default);
+  box-shadow: inset 0 0 0 1px var(--border-default);
+}
+.available .indicator {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--surface-action-primary);
+}
+.available .label {
+  color: var(--text-default);
+}
+
+/* completed */
+.completed {
+  background: var(--surface-default);
+  box-shadow: inset 0 0 0 1px var(--surface-action-primary);
+}
+.completed .indicator {
+  background: var(--surface-action-primary);
+}
+.completed .label {
+  color: var(--text-default);
+}

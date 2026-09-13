@@ -1,0 +1,11 @@
+/* Полупрозрачная пилюля-подсказка поверх фото/видео. Рассчитан на тёмный/
+   фото-фон — в Showcase рендерится на тёмной подложке, как и по месту в
+   продукте (см. ds/components.md). */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--gray-200);
+}

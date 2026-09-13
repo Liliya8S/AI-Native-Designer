@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border-radius: var(--radius-xl);
+}
+
+.neutral {
+  background: var(--surface-well);
+  color: var(--text-default);
+}
+.red {
+  background: var(--bg-category-red-subtle);
+  color: var(--text-category-red);
+}
+.blue {
+  background: var(--bg-category-blue-subtle);
+  color: var(--text-category-blue);
+}
+.success {
+  background: var(--bg-success-subtle);
+  color: var(--text-success);
+}
+
+.value {
+  font-weight: var(--weight-bold);
+}
+
+.label {
+  color: var(--text-muted);
+}
+
+.red .label,
+.blue .label,
+.success .label {
+  color: inherit;
+  opacity: 0.8;
+}

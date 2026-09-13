@@ -1,0 +1,35 @@
+.tabs {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 0 var(--space-1);
+  color: var(--text-muted);
+  transition: color 180ms ease;
+}
+
+.tab:not(.active):hover {
+  color: var(--text-default);
+}
+
+.active {
+  color: var(--text-default);
+}
+
+.indicator {
+  height: 2px;
+  background: transparent;
+  border-radius: var(--radius-none);
+  transition: background-color 180ms ease;
+}
+
+.active .indicator {
+  background: var(--surface-action-primary);
+}

@@ -1,0 +1,79 @@
+:root {
+  /* Accent */
+  --accent-100: #C5C5C5;
+  --accent-300: #686868;
+  --accent-500: #161616;
+  --accent-700: #0F0F0F;
+  --accent-900: #090909;
+
+  /* Gray */
+  --gray-00: #FFFFFF;
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-500: #717172;
+  --gray-700: #31373B;
+  --gray-900: #111827;
+  --gray-950: #030712;
+
+  /* Functional */
+  --success-500: #27CA65;
+  --warning-500: #F59E0B;
+  --error-500: #FC4F50;
+  --info-500: #3B82F6;
+
+  /* Category (не статус — категоризация контента) */
+  --category-red-500: #D92D20;
+  --category-blue-500: #1F5FD1;
+  --category-red-a12: rgba(217, 45, 32, 0.12);
+  --category-blue-a12: rgba(31, 95, 209, 0.12);
+
+  /* Transparent / overlay */
+  --scrim-20: rgba(0, 0, 0, 0.2);
+  --scrim-40: rgba(0, 0, 0, 0.4);
+  --scrim-60: rgba(0, 0, 0, 0.6);
+  --success-a12: rgba(39, 202, 101, 0.12);
+  --warning-a12: rgba(245, 158, 11, 0.12);
+  --error-a12: rgba(252, 79, 80, 0.12);
+  --info-a12: rgba(59, 130, 246, 0.12);
+
+  /* Typography primitives */
+  --font-sans: 'Inter', sans-serif;
+  --size-xs: 12px;
+  --size-sm: 14px;
+  --size-base: 16px;
+  --size-lg: 18px;
+  --size-xl: 20px;
+  --size-2xl: 24px;
+  --size-3xl: 32px;
+  --size-4xl: 48px;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --line-height-base: 1.5;
+
+  /* Radii */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-md-lg: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Shadows */
+  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
