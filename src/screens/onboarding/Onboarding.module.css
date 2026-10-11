@@ -1,0 +1,34 @@
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--surface-default);
+  overflow: hidden;
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spacer {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-height: 0;
+}
+
+.tagline {
+  position: absolute;
+  top: 342px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 260px;
+  font-weight: var(--weight-medium);
+  color: var(--surface-default);
+  opacity: 0.8;
+  text-align: center;
+}

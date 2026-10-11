@@ -1,0 +1,124 @@
+.header {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+  padding: 0 var(--space-3);
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: var(--size-xl);
+  font-weight: var(--weight-bold);
+  color: var(--text-default);
+}
+
+.progressSection {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  color: var(--text-default);
+}
+
+.progressCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--surface-well);
+}
+
+.bareBar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.bareBarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-muted);
+}
+
+.bareBarValueBlue {
+  color: var(--text-category-blue);
+}
+
+.bareBarValueDark {
+  color: var(--text-default);
+}
+
+.bareBarTrack {
+  width: 100%;
+  height: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-well);
+  overflow: hidden;
+}
+
+.bareBarFillBlue {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  background: var(--bg-category-blue);
+}
+
+.bareBarFillDark {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  background: var(--surface-action-primary);
+}
+
+.favTopics {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.favTitle {
+  color: var(--text-default);
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.repeatSection {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  color: var(--text-default);
+}
+
+.repeatCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--surface-well);
+}
+
+.menuWrap {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--space-4);
+}
+
+.spacer {
+  flex: 1;
+  min-height: 0;
+}
+

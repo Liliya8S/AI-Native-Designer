@@ -1,0 +1,16 @@
+.box {
+  position: absolute;
+  border: 2px solid var(--text-on-action);
+  border-radius: 14px;
+  background: var(--overlay-white-06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: var(--size-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--text-on-action);
+}

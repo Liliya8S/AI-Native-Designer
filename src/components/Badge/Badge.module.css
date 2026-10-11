@@ -9,7 +9,7 @@
 
 .success {
   background: var(--bg-success);
-  color: var(--text-on-action);
+  color: var(--text-default);
 }
 .warning {
   background: var(--bg-warning);
@@ -33,7 +33,7 @@
 }
 .neutral {
   background: var(--surface-well);
-  color: var(--text-muted);
+  color: var(--text-default);
 }
 .accent {
   background: var(--surface-action-primary);

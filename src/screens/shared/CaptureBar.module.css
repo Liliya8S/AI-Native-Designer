@@ -1,0 +1,46 @@
+.bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-6) var(--space-8);
+}
+
+.lastScanThumb {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--overlay-white-14);
+}
+
+.shutter {
+  flex: none;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 4px solid var(--border-decorative);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shutterInner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--text-on-action);
+}
+
+.redoWrap {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--overlay-white-14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-on-action);
+}

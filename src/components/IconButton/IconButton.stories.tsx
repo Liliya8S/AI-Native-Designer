@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
+import { ICON_NAMES } from '../Icon'
 import { IconButton } from './IconButton'
 
 /** Кнопка под иконку (тач-таргет). Surface=dark/light/translucent — см. ds/components.md. */
@@ -9,7 +10,7 @@ const meta = {
   args: { surface: 'dark', iconName: 'setting' },
   argTypes: {
     surface: { control: 'inline-radio', options: ['dark', 'light', 'translucent'] },
-    iconName: { control: 'text' },
+    iconName: { control: 'select', options: ICON_NAMES },
   },
   parameters: { layout: 'centered' },
 } satisfies Meta<typeof IconButton>

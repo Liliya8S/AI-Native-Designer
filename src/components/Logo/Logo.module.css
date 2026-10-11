@@ -1,0 +1,22 @@
+.wrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  color: var(--text-default);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.ai {
+  color: var(--text-default);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 9px;
+}

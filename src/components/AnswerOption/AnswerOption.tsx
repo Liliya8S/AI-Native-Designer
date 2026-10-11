@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes } from 'react'
+import { Icon } from '../Icon'
 import styles from './AnswerOption.module.css'
 
 export type AnswerOptionState = 'default' | 'selected' | 'correct' | 'incorrect'
@@ -15,7 +16,12 @@ export function AnswerOption({ state = 'default', letter, label, className, ...r
     <button className={classes} {...rest}>
       <span className={`${styles.letter} ds-label-xs`}>{letter}</span>
       <span className={`${styles.label} ds-body-sm-medium`}>{label}</span>
-      <span className={styles.indicator} aria-hidden />
+      {(state === 'correct' || state === 'incorrect') && (
+        <span className={styles.indicator} aria-hidden>
+          {state === 'correct' && <Icon name="check-circle" size={20} />}
+          {state === 'incorrect' && <Icon name="close-bold" size={12} />}
+        </span>
+      )}
     </button>
   )
 }

@@ -1,0 +1,34 @@
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.viewfinder {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.backgroundPhoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chip1 {
+  position: absolute;
+  top: 488px;
+  left: 77px;
+}
+
+.chip2 {
+  position: absolute;
+  top: 259px;
+  left: 190px;
+  white-space: nowrap;
+}

@@ -19,7 +19,12 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const SECTIONS = ['Билеты', 'История', 'Избранное']
-const TABS = ['Главная', 'Билеты', 'Занятия', 'Профиль']
+const TABS: { label: string; icon: 'home' | 'clipboard-notes' | 'calendar-alt' | 'user' }[] = [
+  { label: 'Главная', icon: 'home' },
+  { label: 'Билеты', icon: 'clipboard-notes' },
+  { label: 'Занятия', icon: 'calendar-alt' },
+  { label: 'Профиль', icon: 'user' },
+]
 
 function ScreenShellDemo() {
   const [tab, setTab] = useState(0)
@@ -53,8 +58,8 @@ function ScreenShellDemo() {
           background: 'var(--surface-default)',
         }}
       >
-        {TABS.map((label, i) => (
-          <TabBarItem key={label} label={label} active={i === tab} onClick={() => setTab(i)} />
+        {TABS.map((t, i) => (
+          <TabBarItem key={t.label} label={t.label} icon={t.icon} active={i === tab} onClick={() => setTab(i)} />
         ))}
       </div>
     </div>

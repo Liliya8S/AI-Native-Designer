@@ -1,0 +1,60 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.subtitle {
+  color: var(--text-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: var(--radius-xl);
+  background: var(--surface-well);
+  color: var(--text-default);
+  text-decoration: none;
+  transition: background-color 180ms ease;
+}
+
+.tile:hover {
+  background: var(--surface-subtle);
+  box-shadow: inset 0 0 0 1px var(--border-default);
+}
+
+.description {
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.route {
+  color: var(--text-category-blue);
+}
+
+.storybookLink {
+  color: var(--text-category-blue);
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.storybookLink:hover {
+  text-decoration: underline;
+}

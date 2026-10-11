@@ -1,4 +1,5 @@
 import type { HTMLAttributes } from 'react'
+import { Icon } from '../Icon'
 import styles from './TimeSlotRow.module.css'
 
 export type TimeSlotRowState = 'default' | 'selected' | 'disabled'
@@ -33,7 +34,7 @@ export function TimeSlotRow({
       </div>
       {state !== 'disabled' && (
         <span className={`${styles.indicator} ${state === 'selected' ? styles.indicatorSelected : ''}`}>
-          {state === 'selected' && '✓'}
+          {state === 'selected' && <Icon name="check" size={14} />}
         </span>
       )}
     </div>

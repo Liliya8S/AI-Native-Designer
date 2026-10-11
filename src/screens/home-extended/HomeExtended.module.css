@@ -1,0 +1,271 @@
+/* Экран переделан «один в один» по референсу driver-home-lavender.html —
+   только шрифты (Inter/Unbounded — уже наши токены) и иконки (Solar Bold из
+   нашего Icon) заменены на свои; цвета/радиусы/отступы оставлены как в
+   референсе (hex напрямую, не через токены ДС — прототип, в Figma не синхронизировано). */
+
+.frame {
+  background: #F3F4F6;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 34px 34px;
+  background: #E6E0FF;
+  color: #111112;
+  text-align: left;
+  padding: 8px 20px 26px;
+  cursor: pointer;
+}
+
+.heroHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+}
+
+.heroEyebrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 40px;
+  color: #111112;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--weight-semibold);
+}
+
+.heroEyebrow span {
+  color: #2F2A45;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.heroSub {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: var(--weight-medium);
+  color: #5E5A70;
+}
+
+.heroButton {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 18px;
+  background: #111112;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: var(--weight-semibold);
+}
+
+.blocks {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 20px 0;
+}
+
+.progressSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--weight-semibold);
+  color: var(--text-default);
+}
+
+.percentChip {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  background: #E6E0FF;
+  font-weight: var(--weight-bold);
+}
+
+.progressTrack {
+  height: 8px;
+  border-radius: 4px;
+  background: #E6E7EB;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+  background: #111112;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 22px;
+  background: #FFFFFF;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  text-align: left;
+  color: var(--text-default);
+  cursor: pointer;
+}
+
+.tileTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tileChip {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--weight-semibold);
+  color: var(--text-default);
+  background: var(--surface-well);
+  padding: 4px 9px;
+  border-radius: 10px;
+}
+
+.tileBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.tileTitle {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
+}
+
+.tileSub {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: #6B6B76;
+  margin-top: 2px;
+}
+
+.historyCard {
+  box-sizing: border-box;
+  height: 68px;
+  border: none;
+  border-radius: 22px;
+  background: #FFFFFF;
+  padding: 0 16px 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-default);
+  text-align: left;
+  cursor: pointer;
+}
+
+.historyText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.historyTitle {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: var(--weight-semibold);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.statCard {
+  box-sizing: border-box;
+  height: 92px;
+  border-radius: 22px;
+  background: #FFFFFF;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ring {
+  flex: none;
+  width: 44px;
+  height: 44px;
+}
+
+.bars {
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 40px;
+}
+
+.bar {
+  width: 6px;
+  height: 40px;
+  border-radius: 3px;
+  background: #EEEAFE;
+}
+
+.barFilled {
+  background: #A898F5;
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+}
+
+.statLabel {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: #6B6B76;
+}
+
+.statValue {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: var(--weight-bold);
+  color: var(--text-default);
+}
+
+.spacer {
+  flex: 1;
+  min-height: 0;
+}

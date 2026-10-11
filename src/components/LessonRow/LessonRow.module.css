@@ -22,6 +22,7 @@
   justify-content: center;
   color: var(--text-muted);
   font-weight: var(--weight-semibold);
+  object-fit: cover;
 }
 
 .textCol {
@@ -42,5 +43,7 @@
 
 .chevron {
   flex: none;
+  display: flex;
+  align-items: center;
   color: var(--text-muted);
 }

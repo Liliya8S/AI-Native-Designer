@@ -16,10 +16,12 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-/** Рассчитан на тёмный/фото-фон — здесь показан на тёмной подложке, как в продукте. */
+const PHOTO_BACKDROP = 'linear-gradient(135deg, #8fb8e0 0%, #d9c9a3 55%, #7a8f6e 100%)'
+
+/** Тёмная пилюля (scrim-60) + белый текст — рассчитан на светлый/пёстрый фото-фон, здесь имитация кадра камеры. */
 export const Default: Story = {
   render: (args) => (
-    <div style={{ padding: 32, background: '#1a1a1a', borderRadius: 12 }}>
+    <div style={{ padding: 32, background: PHOTO_BACKDROP, borderRadius: 12 }}>
       <OverlayChip {...args} />
     </div>
   ),
@@ -28,7 +30,7 @@ export const Default: Story = {
 export const AllVariants: Story = {
   parameters: { layout: 'padded' },
   render: () => (
-    <div style={{ display: 'flex', gap: 8, padding: 32, background: '#1a1a1a', borderRadius: 12 }}>
+    <div style={{ display: 'flex', gap: 8, padding: 32, background: PHOTO_BACKDROP, borderRadius: 12 }}>
       <OverlayChip>Наведите на знак</OverlayChip>
       <OverlayChip>00:12</OverlayChip>
       <OverlayChip>4 из 10</OverlayChip>

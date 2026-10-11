@@ -1,0 +1,59 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 20px;
+  background: #FDEDED;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.amountCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: var(--weight-medium);
+  color: #E5484D;
+}
+
+.amount {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #E5484D;
+  margin-top: 2px;
+}
+
+.icon {
+  flex: none;
+  color: #E5484D;
+}
+
+.lawLine {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.4;
+  color: #2A2A33;
+}
+
+.reason {
+  font-weight: var(--weight-semibold);
+}
+
+.law {
+  color: #6B6B76;
+  white-space: nowrap;
+}

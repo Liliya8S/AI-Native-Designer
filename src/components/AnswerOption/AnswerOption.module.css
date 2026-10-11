@@ -7,7 +7,6 @@
   height: 52px;
   border-radius: var(--radius-lg);
   background: var(--surface-default);
-  box-shadow: inset 0 0 0 1px var(--border-default);
   cursor: pointer;
   text-align: left;
   transition: box-shadow 180ms ease;
@@ -15,14 +14,7 @@
 
 .letter {
   flex: none;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--surface-well);
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: var(--surface-action-primary);
   font-weight: var(--weight-semibold);
 }
 
@@ -37,25 +29,28 @@
   height: 20px;
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-on-action);
 }
 
 .selected {
   box-shadow: inset 0 0 0 2px var(--surface-action-primary);
 }
-.selected .letter {
-  background: var(--surface-action-primary);
-  color: var(--text-on-action);
-}
 
 .correct {
+  background: var(--bg-success-subtle);
   box-shadow: inset 0 0 0 2px var(--bg-success);
 }
 .correct .indicator {
-  background: var(--bg-success);
+  background: none;
   box-shadow: none;
+  color: var(--bg-success);
 }
 
 .incorrect {
+  background: var(--bg-error-subtle);
   box-shadow: inset 0 0 0 2px var(--bg-error);
 }
 .incorrect .indicator {

@@ -1,66 +1,84 @@
-// Иконки — Unicons by Iconscout (стиль Line), тот же набор, что скопирован
-// вручную во фрейм «Line» на странице Components в Figma (см. ds/CONTRACT.md).
-// Экспортированы как raw-SVG (?raw) с fill="currentColor", чтобы цвет
-// наследовался из CSS через семантические токены, как у всех остальных
-// компонентов базы.
-import times from '../../assets/icons/times.svg?raw'
-import volumeUp from '../../assets/icons/volume-up.svg?raw'
-import arrowLeft from '../../assets/icons/arrow-left.svg?raw'
-import setting from '../../assets/icons/setting.svg?raw'
-import signOutAlt from '../../assets/icons/sign-out-alt.svg?raw'
-import historyAlt from '../../assets/icons/history-alt.svg?raw'
-import calendarAlt from '../../assets/icons/calendar-alt.svg?raw'
-import home from '../../assets/icons/home.svg?raw'
-import user from '../../assets/icons/user.svg?raw'
-import clipboardNotes from '../../assets/icons/clipboard-notes.svg?raw'
-import check from '../../assets/icons/check.svg?raw'
-import camera from '../../assets/icons/camera.svg?raw'
-import bell from '../../assets/icons/bell.svg?raw'
-import search from '../../assets/icons/search.svg?raw'
-import lock from '../../assets/icons/lock.svg?raw'
-import angleRight from '../../assets/icons/angle-right.svg?raw'
-import angleLeft from '../../assets/icons/angle-left.svg?raw'
-import exclamationCircle from '../../assets/icons/exclamation-circle.svg?raw'
-import exclamationTriangle from '../../assets/icons/exclamation-triangle.svg?raw'
-import infoCircle from '../../assets/icons/info-circle.svg?raw'
-import checkCircle from '../../assets/icons/check-circle.svg?raw'
-import busSchool from '../../assets/icons/bus-school.svg?raw'
-import redo from '../../assets/icons/redo.svg?raw'
-import shieldCheck from '../../assets/icons/shield-check.svg?raw'
-import pause from '../../assets/icons/pause.svg?raw'
-import images from '../../assets/icons/images.svg?raw'
-import bolt from '../../assets/icons/bolt.svg?raw'
-import questionCircle from '../../assets/icons/question-circle.svg?raw'
+// Иконки: Solar Bold (https://solar-icons.vercel.app, MIT) — стиль выбран для всего интерфейса.
+// Классические шевроны (angle-left/angle-right) и стрелка назад (arrow-left) — Unicons,
+// чтобы навигация оставалась без треугольных «alt-arrow» форм.
+import timesIcon from '../../assets/icons/solar/close.svg?raw'
+import volumeUpIcon from '../../assets/icons/solar/volume-loud.svg?raw'
+import settingIcon from '../../assets/icons/solar/settings.svg?raw'
+import signOutAltIcon from '../../assets/icons/solar/logout.svg?raw'
+import historyAltIcon from '../../assets/icons/solar/clock-circle.svg?raw'
+import calendarAltIcon from '../../assets/icons/solar/calendar.svg?raw'
+import homeIcon from '../../assets/icons/solar/home.svg?raw'
+import userIcon from '../../assets/icons/solar/user.svg?raw'
+import clipboardNotesIcon from '../../assets/icons/solar/clipboard-list.svg?raw'
+import checkIcon from '../../assets/icons/solar/check.svg?raw'
+import cameraIcon from '../../assets/icons/solar/camera.svg?raw'
+import bellIcon from '../../assets/icons/solar/bell.svg?raw'
+import searchIcon from '../../assets/icons/solar/magnifier.svg?raw'
+import lockIcon from '../../assets/icons/solar/lock.svg?raw'
+import exclamationCircleIcon from '../../assets/icons/solar/danger-circle.svg?raw'
+import exclamationTriangleIcon from '../../assets/icons/solar/danger-triangle.svg?raw'
+import infoCircleIcon from '../../assets/icons/solar/info-circle.svg?raw'
+import checkCircleIcon from '../../assets/icons/solar/check-circle.svg?raw'
+import busSchoolIcon from '../../assets/icons/solar/bus.svg?raw'
+import redoIcon from '../../assets/icons/solar/restart.svg?raw'
+import shieldCheckIcon from '../../assets/icons/solar/shield-check.svg?raw'
+import pauseIcon from '../../assets/icons/solar/pause.svg?raw'
+import imagesIcon from '../../assets/icons/solar/gallery.svg?raw'
+import boltIcon from '../../assets/icons/solar/bolt.svg?raw'
+import questionCircleIcon from '../../assets/icons/solar/question-circle.svg?raw'
+import barsIcon from '../../assets/icons/solar/hamburger-menu.svg?raw'
+import clockIcon from '../../assets/icons/solar/clock-circle.svg?raw'
+import mapMarkerIcon from '../../assets/icons/solar/map-point.svg?raw'
+import cameraBoldIcon from '../../assets/icons/solar/camera.svg?raw'
+import clipboardListBoldIcon from '../../assets/icons/solar/clipboard-list.svg?raw'
+import calendarBoldIcon from '../../assets/icons/solar/calendar.svg?raw'
+import bellBoldIcon from '../../assets/icons/solar/bell.svg?raw'
+import homeBoldIcon from '../../assets/icons/solar/home.svg?raw'
+import userBoldIcon from '../../assets/icons/solar/user.svg?raw'
+import closeBoldIcon from '../../assets/icons/solar/close.svg?raw'
+import arrowLeftIcon from '../../assets/icons/arrow-left.svg?raw'
+import angleLeftIcon from '../../assets/icons/angle-left.svg?raw'
+import angleRightIcon from '../../assets/icons/angle-right.svg?raw'
 
 export const icons = {
-  times,
-  'volume-up': volumeUp,
-  'arrow-left': arrowLeft,
-  setting,
-  'sign-out-alt': signOutAlt,
-  'history-alt': historyAlt,
-  'calendar-alt': calendarAlt,
-  home,
-  user,
-  'clipboard-notes': clipboardNotes,
-  check,
-  camera,
-  bell,
-  search,
-  lock,
-  'angle-right': angleRight,
-  'angle-left': angleLeft,
-  'exclamation-circle': exclamationCircle,
-  'exclamation-triangle': exclamationTriangle,
-  'info-circle': infoCircle,
-  'check-circle': checkCircle,
-  'bus-school': busSchool,
-  redo,
-  'shield-check': shieldCheck,
-  pause,
-  images,
-  bolt,
-  'question-circle': questionCircle,
+  'times': timesIcon,
+  'volume-up': volumeUpIcon,
+  'setting': settingIcon,
+  'sign-out-alt': signOutAltIcon,
+  'history-alt': historyAltIcon,
+  'calendar-alt': calendarAltIcon,
+  'home': homeIcon,
+  'user': userIcon,
+  'clipboard-notes': clipboardNotesIcon,
+  'check': checkIcon,
+  'camera': cameraIcon,
+  'bell': bellIcon,
+  'search': searchIcon,
+  'lock': lockIcon,
+  'exclamation-circle': exclamationCircleIcon,
+  'exclamation-triangle': exclamationTriangleIcon,
+  'info-circle': infoCircleIcon,
+  'check-circle': checkCircleIcon,
+  'bus-school': busSchoolIcon,
+  'redo': redoIcon,
+  'shield-check': shieldCheckIcon,
+  'pause': pauseIcon,
+  'images': imagesIcon,
+  'bolt': boltIcon,
+  'question-circle': questionCircleIcon,
+  'bars': barsIcon,
+  'clock': clockIcon,
+  'map-marker': mapMarkerIcon,
+  'camera-bold': cameraBoldIcon,
+  'clipboard-list-bold': clipboardListBoldIcon,
+  'calendar-bold': calendarBoldIcon,
+  'bell-bold': bellBoldIcon,
+  'home-bold': homeBoldIcon,
+  'user-bold': userBoldIcon,
+  'close-bold': closeBoldIcon,
+  'arrow-left': arrowLeftIcon,
+  'angle-left': angleLeftIcon,
+  'angle-right': angleRightIcon,
 } as const
 
 export type IconName = keyof typeof icons

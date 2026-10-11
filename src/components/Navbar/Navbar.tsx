@@ -12,9 +12,9 @@ export function Navbar({ title, leftSlot, rightSlot, className, ...rest }: Navba
   const classes = [styles.navbar, className].filter(Boolean).join(' ')
   return (
     <div className={classes} {...rest}>
-      {leftSlot ?? <IconButton surface="light" iconName="menu" />}
+      {leftSlot ?? <IconButton surface="light" iconName="bars" />}
       <span className={`${styles.title} ds-body-sm-medium`}>{title}</span>
-      {rightSlot ?? <IconButton surface="light" iconName="settings" />}
+      {rightSlot ?? <IconButton surface="light" iconName="setting" />}
     </div>
   )
 }

@@ -1,0 +1,59 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.corners {
+  position: relative;
+  width: 120px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camIcon {
+  color: var(--text-on-action);
+}
+
+.corner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-color: var(--overlay-white-55);
+  border-style: solid;
+}
+
+.topLeft {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+  border-top-left-radius: 14px;
+}
+
+.topRight {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+  border-top-right-radius: 14px;
+}
+
+.bottomLeft {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+  border-bottom-left-radius: 14px;
+}
+
+.bottomRight {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+  border-bottom-right-radius: 14px;
+}
+
+.caption {
+  color: var(--text-on-action);
+}

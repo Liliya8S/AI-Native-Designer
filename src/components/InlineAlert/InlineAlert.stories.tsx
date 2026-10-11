@@ -6,10 +6,11 @@ const meta = {
   title: 'Components/InlineAlert',
   component: InlineAlert,
   tags: ['autodocs'],
-  args: { variant: 'info', surface: 'subtle', children: 'Наведите камеру ближе к знаку' },
+  args: { variant: 'info', surface: 'subtle', icon: true, children: 'Наведите камеру ближе к знаку' },
   argTypes: {
     variant: { control: 'inline-radio', options: ['error', 'warning', 'info', 'success'] },
     surface: { control: 'inline-radio', options: ['solid', 'subtle'] },
+    icon: { control: 'boolean' },
     children: { control: 'text' },
   },
   parameters: { layout: 'centered' },
@@ -44,6 +45,16 @@ export const WarningSubtle: Story = {
 }
 export const SuccessSubtle: Story = {
   args: { variant: 'success', surface: 'subtle', children: 'Знак успешно распознан' },
+  render: (args) => (
+    <div style={{ width: 360 }}>
+      <InlineAlert {...args} />
+    </div>
+  ),
+}
+
+/** Без иконки — переключаемая видимость дочернего узла на инстансе в Figma (не отдельный вариант). */
+export const NoIcon: Story = {
+  args: { icon: false, children: 'Этот знак часто путают со знаком «Проезд без остановки запрещён» → Подробнее' },
   render: (args) => (
     <div style={{ width: 360 }}>
       <InlineAlert {...args} />

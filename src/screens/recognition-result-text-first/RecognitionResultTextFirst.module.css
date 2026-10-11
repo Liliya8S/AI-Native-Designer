@@ -1,0 +1,77 @@
+.body {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 20px 0;
+}
+
+.badgesRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text-default);
+}
+
+.photoPreview {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1264 / 848;
+  border-radius: 22px;
+  object-fit: cover;
+  display: block;
+}
+
+.description {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.45;
+  color: #2A2A33;
+}
+
+.hintLink {
+  display: block;
+  border-radius: 20px;
+  background: var(--surface-well);
+  padding: 14px 20px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  color: #2A2A33;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hintMore {
+  font-weight: var(--weight-semibold);
+  color: var(--text-default);
+  white-space: nowrap;
+}
+
+.spacer {
+  flex: 1;
+  min-height: 0;
+}
+
+.actionsRow {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.actionButton {
+  flex: 1;
+}

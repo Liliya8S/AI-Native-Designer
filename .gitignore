@@ -34,3 +34,7 @@ __pycache__/
 
 *storybook.log
 storybook-static
+
+# Scratch media (Higgsfield downloads, storyboard frames) — not part of the app bundle
+/Screen/
+/Генерация изображения/

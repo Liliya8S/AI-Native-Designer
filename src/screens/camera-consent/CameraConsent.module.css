@@ -1,0 +1,34 @@
+.screen {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.viewfinder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.dimmedCaptureBar {
+  opacity: 0.4;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-scrim);
+  pointer-events: none;
+}
+
+.sheetWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--space-4);
+}

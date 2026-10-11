@@ -1,0 +1,88 @@
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto;
+  min-height: 852px;
+  background: var(--surface-subtle);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.darkFrame {
+  background: var(--surface-inverse);
+}
+
+.statusBar {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-4);
+  color: var(--text-default);
+}
+
+.statusBar.dark {
+  color: var(--text-on-action);
+}
+
+/* Время и иконки сидят в двух flex:1-контейнерах по бокам, а не рядом с
+   островом через space-between — иначе остров смещается от истинного
+   центра, если ширина времени и иконок различается (как в реальном
+   Apple StatusBar: Left Side/Right Side оба flex-[1_0_0]). */
+.statusSide {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.statusSideRight {
+  justify-content: flex-end;
+}
+
+.time {
+  font-family: var(--font-sans);
+  font-size: var(--size-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.islandPill {
+  flex: none;
+  width: 80px;
+  height: 24px;
+  border-radius: 999px;
+  background: #000;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.homeIndicatorBar {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeIndicatorPill {
+  width: 134px;
+  height: 5px;
+  border-radius: 999px;
+  background: #000;
+}
+
+.pillLight {
+  background: var(--text-on-action);
+}

@@ -1,0 +1,45 @@
+.calendarWrap {
+  flex: none;
+  padding: var(--space-4) var(--space-4) 0;
+}
+
+.slotsWrap {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+}
+
+.slotsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-default);
+}
+
+.slotsDate {
+  color: var(--text-muted);
+}
+
+.spacer {
+  flex: 1;
+  min-height: 0;
+}
+
+.footer {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+}
+
+.footerCaption {
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.bookButton {
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-default);
+}
+
+.dot {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bg-error);
+}

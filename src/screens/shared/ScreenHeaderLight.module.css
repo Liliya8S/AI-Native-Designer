@@ -1,0 +1,19 @@
+.header {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+  padding: 0 var(--space-3);
+}
+
+.title {
+  color: var(--text-default);
+}
+
+.spacer40 {
+  display: block;
+  width: 40px;
+  height: 40px;
+}

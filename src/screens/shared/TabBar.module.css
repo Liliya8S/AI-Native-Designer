@@ -1,0 +1,23 @@
+.tabBar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--space-2) var(--space-4) var(--space-4);
+}
+
+.scanButton {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin-top: -14px;
+  border: none;
+  border-radius: 50%;
+  background: #111112;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(17, 17, 18, 0.14);
+  cursor: pointer;
+}

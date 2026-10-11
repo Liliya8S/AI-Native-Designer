@@ -23,6 +23,7 @@
   height: 44px;
   border-radius: var(--radius-md);
   background: var(--surface-action-primary);
+  color: var(--text-on-action);
 }
 .dark .icon {
   width: 20px;
@@ -36,6 +37,7 @@
   height: 32px;
   border-radius: var(--radius-md);
   background: var(--surface-well);
+  color: var(--text-default);
 }
 .light .icon {
   width: 16px;
@@ -43,14 +45,13 @@
   background: var(--text-default);
 }
 
-/* Surface=translucent — 40px, тёмные AR-экраны. 12%-белый оверлей — та же
-   decorative-полупрозрачность без отдельного токена, что и в Figma-мастере
-   (см. ds/components.md, готча про opacity на инстансах). */
+/* Surface=translucent — 40px, тёмные AR-экраны. */
 .translucent {
   width: 40px;
   height: 40px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--overlay-white-12);
+  color: var(--text-on-action);
 }
 .translucent .icon {
   width: 18px;

@@ -1,5 +1,8 @@
 import { useState, type ReactNode } from 'react'
 import styles from './Showcase.module.css'
+import scanGiveWay from './assets/photos/scan-give-way.png'
+import scanPedestrian from './assets/photos/scan-pedestrian.png'
+import scanPriorityRoad from './assets/photos/scan-priority-road.png'
 import {
   Button,
   IconButton,
@@ -143,7 +146,7 @@ export default function Showcase() {
           </Labeled>
         </Row>
         <Row>
-          <IconButton surface="dark" iconName="settings" />
+          <IconButton surface="dark" iconName="setting" />
           <IconButton surface="light" iconName="arrow-left" />
           <span className={styles.darkPad}>
             <IconButton surface="translucent" iconName="times" />
@@ -219,9 +222,9 @@ export default function Showcase() {
         </div>
 
         <div style={{ maxWidth: 320 }}>
-          <ListItem label="История вождений" />
-          <ListItem label="Настройки" />
-          <ListItem label="Выйти" style2="destructive" />
+          <ListItem icon="history-alt" label="История вождений" />
+          <ListItem icon="setting" label="Настройки" />
+          <ListItem icon="sign-out-alt" label="Выйти" style2="destructive" />
         </div>
 
         <Row>
@@ -231,9 +234,9 @@ export default function Showcase() {
         </Row>
 
         <div style={{ maxWidth: 400, display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <ScanRow category="neutral" title="Уступите дорогу" meta="Сегодня, 14:20" />
-          <ScanRow category="red" title="Знак 2.4 · Приоритет" meta="Вчера, 09:10" />
-          <ScanRow category="blue" title="Пешеходный переход" meta="Вчера, 13:08" />
+          <ScanRow category="red" title="Уступите дорогу" meta="Сегодня, 14:20" thumbSrc={scanGiveWay} />
+          <ScanRow category="blue" title="Пешеходный переход" meta="Вчера, 09:10" thumbSrc={scanPedestrian} />
+          <ScanRow category="neutral" title="Главная дорога" meta="Вчера, 13:08" thumbSrc={scanPriorityRoad} />
         </div>
 
         <div style={{ maxWidth: 400, display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -255,8 +258,13 @@ export default function Showcase() {
         </div>
 
         <div style={{ maxWidth: 400, display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <FeatureCard iconSide="left" title="Билеты ПДД" subtitle="15 тем ПДД, работает офлайн" />
-          <FeatureCard iconSide="right" title="Запись к инструктору" subtitle="Свободных слотов на неделю: 12" />
+          <FeatureCard iconSide="left" icon="clipboard-notes" title="Билеты ПДД" subtitle="15 тем ПДД, работает офлайн" />
+          <FeatureCard
+            iconSide="right"
+            icon="calendar-alt"
+            title="Запись к инструктору"
+            subtitle="Свободных слотов на неделю: 12"
+          />
         </div>
       </Section>
 
@@ -266,10 +274,10 @@ export default function Showcase() {
         </div>
         <Tabs items={['Билеты', 'История']} activeIndex={tabIndex} onChange={setTabIndex} />
         <Row>
-          <TabBarItem active label="Главная" />
-          <TabBarItem label="Билеты" />
-          <TabBarItem label="Занятия" />
-          <TabBarItem label="Профиль" />
+          <TabBarItem active icon="home" label="Главная" />
+          <TabBarItem icon="clipboard-notes" label="Билеты" />
+          <TabBarItem icon="calendar-alt" label="Занятия" />
+          <TabBarItem icon="user" label="Профиль" />
         </Row>
       </Section>
 

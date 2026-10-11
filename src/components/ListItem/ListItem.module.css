@@ -24,11 +24,6 @@
   flex: 1;
 }
 
-.chevron {
-  flex: none;
-  color: var(--text-muted);
-}
-
 .default {
   color: var(--text-default);
 }

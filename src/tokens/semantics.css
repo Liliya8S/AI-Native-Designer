@@ -12,7 +12,7 @@
   --text-muted: var(--gray-500);
   --text-on-action: var(--gray-00);
   --text-error: var(--error-500);
-  --text-success: var(--success-500);
+  --text-success: #1A1918;
 
   /* Borders */
   --border-default: var(--gray-200);
@@ -39,7 +39,7 @@
   --text-category-red: var(--category-red-500);
   --bg-category-blue: var(--category-blue-500);
   --bg-category-blue-subtle: var(--category-blue-a12);
-  --text-category-blue: var(--category-blue-500);
+  --text-category-blue: #1A1918;
 
   /* Overlay */
   --overlay-scrim: var(--scrim-40);
