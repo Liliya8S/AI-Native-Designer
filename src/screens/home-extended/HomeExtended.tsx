@@ -19,7 +19,12 @@ export function HomeExtended() {
 
   return (
     <PhoneFrame className={styles.frame}>
-      <button className={styles.hero} type="button" onClick={() => navigate('/screens/camera-consent')}>
+      <button
+        className={styles.hero}
+        type="button"
+        data-track="button: Сканировать знак"
+        onClick={() => navigate('/screens/camera-consent')}
+      >
         <div className={styles.heroHeader}>
           <Logo
             onClick={(e) => e.stopPropagation()}
@@ -42,7 +47,12 @@ export function HomeExtended() {
 
       <div className={styles.blocks}>
         <div className={styles.tiles}>
-          <button className={styles.tile} type="button" onClick={() => navigate('/screens/test-question')}>
+          <button
+            className={styles.tile}
+            type="button"
+            data-track="button: Билеты ПДД"
+            onClick={() => navigate('/screens/test-question')}
+          >
             <span className={styles.tileTop}>
               <Icon name="clipboard-list-bold" size={22} />
               <span className={styles.tileChip}>15 тем</span>
@@ -52,7 +62,12 @@ export function HomeExtended() {
               <span className={styles.tileSub}>Офлайн</span>
             </span>
           </button>
-          <button className={styles.tile} type="button" onClick={() => navigate('/screens/instructor-booking')}>
+          <button
+            className={styles.tile}
+            type="button"
+            data-track="button: Запись к инструктору"
+            onClick={() => navigate('/screens/instructor-booking')}
+          >
             <span className={styles.tileTop}>
               <Icon name="calendar-bold" size={22} />
               <span className={styles.tileChip}>12 слотов</span>
