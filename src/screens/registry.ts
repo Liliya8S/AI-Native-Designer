@@ -7,6 +7,8 @@ export interface ScreenEntry {
   description: string
   route: string
   component: ComponentType
+  /** Не показывать плиткой в публичном списке экранов (`/`) — маршрут при этом остаётся рабочим для внутренней навигации. */
+  hidden?: boolean
 }
 
 const HomeExtended = lazy(() => import('./home-extended/HomeExtended').then((m) => ({ default: m.HomeExtended })))
@@ -35,6 +37,7 @@ export const screens: ScreenEntry[] = [
     description: 'Полноэкранная заставка (фото + логотип «DRIVER») с тегларом «Твой AI ассистент в дороге»',
     route: '/screens/onboarding',
     component: Onboarding,
+    hidden: true,
   },
   {
     id: 'home-extended',

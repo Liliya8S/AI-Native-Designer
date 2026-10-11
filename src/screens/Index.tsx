@@ -13,7 +13,7 @@ export function ScreensIndex() {
       </div>
 
       <div className={styles.grid}>
-        {screens.map((screen) => (
+        {screens.filter((screen) => !screen.hidden).map((screen) => (
           <Link key={screen.id} to={screen.route} className={styles.tile}>
             <span className="ds-heading-lg">{screen.name}</span>
             <span className={`${styles.description} ds-body-xs`}>{screen.description}</span>
