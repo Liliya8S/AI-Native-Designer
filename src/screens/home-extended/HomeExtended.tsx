@@ -22,11 +22,8 @@ export function HomeExtended() {
       <button className={styles.hero} type="button" onClick={() => navigate('/screens/camera-consent')}>
         <div className={styles.heroHeader}>
           <Logo
-            onClick={(e) => {
-              e.stopPropagation()
-              navigate('/screens/onboarding')
-            }}
-            style={{ cursor: 'pointer', color: '#5341B8', opacity: 0.4 }}
+            onClick={(e) => e.stopPropagation()}
+            style={{ color: '#5341B8', opacity: 0.4 }}
           />
           <NotificationBell />
         </div>
