@@ -3,6 +3,7 @@
 - **Репозиторий:** https://github.com/Liliya8S/AI-Native-Designer
 - **Ветка:** main
 - **Figma:** https://www.figma.com/design/03HBFy4ijiaHZcbkVTeEIU/Pix-Perfct--Tati-R-
+- **Живая ссылка (прототип):** https://ai-native-designer-ochre.vercel.app — путь деплоя: сервис (Vercel), деплой из GitHub-репозитория, обновляется автоматически на каждый пуш в `main`
 
 ## Состав
 
